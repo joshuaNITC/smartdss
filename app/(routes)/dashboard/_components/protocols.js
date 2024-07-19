@@ -1,26 +1,26 @@
 export const protocols = [
   [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "Fusce condimentum nunc sit amet risus tincidunt lacinia.",
+    "Deploy advanced surveillance technologies with AI analytics.",
+    "Establish centralized control centers for continuous monitoring.",
   ],
   [
-    "Mauris non diam nec ex ultrices lobortis.",
-    "Nunc ultrices justo eget urna dictum consectetur.",
+    "Use multi-channel communication for real-time updates.",
+    "Implement emergency alert systems and conduct regular tests.",
   ],
   [
-    "Vestibulum eleifend justo eget quam maximus porttitor.",
-    "Vivamus mollis nunc dignissim, imperdiet risus a, rhoncus nisi.",
+    "Designate clear entry and exit points with proper signage.",
+    "Deploy trained personnel for effective crowd management.",
   ],
   [
-    "Mauris a magna varius, rhoncus mi non, blandit enim.",
-    "Etiam et lacus sit amet metus sagittis vehicula et sed sem.",
+    "Develop comprehensive emergency plans with evacuation routes.",
+    "Conduct regular emergency drills involving all stakeholders.",
   ],
   [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Vestibulum accumsan justo a sem dictum, dapibus eleifend.",
+    "Implement data collection systems with privacy considerations.",
+    "Analyze data for insights to improve crowd management.",
   ],
   [
-    "Mauris non diam nec ex ultrices lobortis.",
-    "Nunc ultrices justo eget urna dictum consectetur.",
+    "Provide facilities like restrooms and first aid points.",
+    "Ensure access to medical assistance.",
   ],
 ];

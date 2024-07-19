@@ -16,7 +16,6 @@ function Procedure() {
     }
   };
 
-  // Function to handle prev button click
   const prev = () => {
     if (procedureCount > 1) {
       setProcedureCount((prevCount) => prevCount - 1); // Decrement procedureCount
@@ -25,25 +24,13 @@ function Procedure() {
   };
 
   return (
-    // <div className="justify-center">
-    //   <div className="flex flex-row justify-center">
-    //     <button onClick={prev}>PREV</button>
-    //     <button onClick={next}>NEXT</button>
-    //   </div>
-    //   <div className="w-[70%] bg-white shadow-lg h-auto rounded-xl flex flex-col justify-center items-center">
-    //     Protocol {procedureCount}
-    //     <ol>
-    //       <div className="w-[70%] flex text-pretty justify-center">
-    //         {array.map((items) => (
-    //           <li>{items}</li>
-    //         ))}{" "}
-    //       </div>
-    //     </ol>
-    //   </div>
-    // </div>
-    <div className="flex flex-col bg-white w-[90%] lg:w-[70%] mx-auto justify-center shadow-lg h-auto rounded-xl">
+    <div className="flex flex-col bg-white w-[90%] mx-auto justify-center shadow-lg h-auto rounded-xl">
       <div className="flex flex-row w-full justify-between px-4 py-4">
-        <button onClick={prev} className="flex justify-start">
+        <button
+          onClick={prev}
+          className={`flex justify-start ${procedureCount <= 1 ? "cursor-not-allowed" : ""}`}
+          disabled={procedureCount <= 1}
+        >
           <Image
             src={"/next-svgrepo-com.svg"}
             width={20}
@@ -53,8 +40,11 @@ function Procedure() {
           />
         </button>
         <span className="font-mono font-bold">Protocol {procedureCount}</span>
-
-        <button onClick={next} className="flex justify-end">
+        <button
+          onClick={next}
+          className={`flex justify-end ${procedureCount >= protocols.length ? "cursor-not-allowed" : ""}`}
+          disabled={procedureCount >= protocols.length}
+        >
           <Image
             src={"next-svgrepo-com.svg"}
             width={20}
@@ -65,7 +55,7 @@ function Procedure() {
       </div>
       <div className="flex flex-col justify-center items-center">
         <ol className="list-decimal font-mono text-xs md:text-sm">
-          <div className="flex flex-col text-left justify-center mx-10 py-6 ">
+          <div className="flex flex-col text-left justify-center mx-10 py-6">
             {array.map((items, index) => (
               <li key={index} className="pb-4 break-words">
                 {items}
